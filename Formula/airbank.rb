@@ -3,8 +3,8 @@ class Airbank < Formula
 
   desc "Airbank by Finsider - the AI-native hedge fund that lives in your terminal"
   homepage "https://github.com/dm3n/airbank-fund"
-  url "https://github.com/dm3n/airbank-fund/archive/refs/tags/v2.1.0.tar.gz"
-  sha256 "9eb93b0a4eae11307e2ccb7e51fe33aa4c8118dea69ee7945d98ed86168fbb5b"
+  url "https://github.com/dm3n/airbank-fund/archive/refs/tags/v2.2.0.tar.gz"
+  sha256 "6ad107d0352c196c704e29ff88b28efa612383b6462065abe17848ecd080345b"
   license "MIT"
 
   depends_on "python@3.13"
@@ -27,6 +27,6 @@ class Airbank < Formula
   end
 
   test do
-    assert_match "airbank 2.1.0", shell_output("#{bin}/airbank version")
+    assert_match "airbank 2.2.0", shell_output("#{bin}/airbank version")
   end
 end
