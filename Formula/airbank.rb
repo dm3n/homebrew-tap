@@ -1,10 +1,10 @@
 class Airbank < Formula
   include Language::Python::Virtualenv
 
-  desc "Airbank by Finsider - the AI-native hedge fund that lives in your terminal"
+  desc "Airbank by Finsider - the AI-native investment bank that lives in your terminal"
   homepage "https://github.com/dm3n/airbank-fund"
-  url "https://github.com/dm3n/airbank-fund/archive/refs/tags/v2.4.1.tar.gz"
-  sha256 "b09f31f0393a466e6871d84b59928cade74c16b47e89bdbd16aefc8b27ee881a"
+  url "https://github.com/dm3n/airbank-fund/archive/refs/tags/v3.0.0.tar.gz"
+  sha256 "e8d0d76289eda0a15426b616735633ba64b99a8a47dfbf85beaea16bf24d13f3"
   license "MIT"
 
   depends_on "python@3.13"
@@ -27,6 +27,6 @@ class Airbank < Formula
   end
 
   test do
-    assert_match "airbank 2.4.1", shell_output("#{bin}/airbank version")
+    assert_match "airbank 3.0.0", shell_output("#{bin}/airbank version")
   end
 end
